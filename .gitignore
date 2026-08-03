@@ -1,0 +1,17 @@
+# 第三方二进制，用 ./install.sh 按需下载，不入库
+bin/
+
+# 上传日志 —— 含本地绝对路径、网盘账号 uid / 用户名 / 容量，属敏感信息
+*.log
+*.log.failed
+
+# BaiduPCS-Go 的登录态（BDUSS / STOKEN 明文存在这里）
+# 默认在 ~/.config/BaiduPCS-Go/，但设过 BAIDUPCS_GO_CONFIG_DIR 就可能落到本地
+pcs_config.json
+.BaiduPCS-Go/
+config/
+
+# 常见杂项
+.DS_Store
+*.swp
+*~
